@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 
+# more info on mkdir pathlib method https://docs.python.org/3/library/pathlib.html#creating-files-and-directories
 
 #add an argument parser to read the arguments from the command line
 parser = argparse.ArgumentParser()
