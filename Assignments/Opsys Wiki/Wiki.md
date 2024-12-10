@@ -263,22 +263,65 @@
 ### 10. Advanced Topics and Algorithms (optional) - Sly
 
 - Virtualization
+  - Taking the physical hardware resources of a computer and splitting them up into multiple digitally separate environments. Each
+    have their own allocated resources to mimic a physical computer.
+    [Source](https://aws.amazon.com/what-is/virtualization/#:~:text=Virtualization%20is%20technology%20that%20you,on%20a%20single%20physical%20machine.)
 - Hypervisors
+  - Software component that manages each virtual machine, making sure they each have their own allocated resources and don't
+    interfere with the others.
 - Containerization
+  - Bundles application code with the configurations, libraries and dependencies it needs. This entire package is abstracted away
+    from the host OS and is made portable. [Source](https://www.ibm.com/topics/containerization)
 - Distributed Systems
+  - Collection of programs that use resources from multiple systems to run a task. [Source](https://www.atlassian.com/microservices/microservices-architecture/distributed-architecture#:~:text=A%20distributed%20system%20is%20a,of%20failure%20from%20a%20system.)
 - Distributed File Systems
+  - File system that is spread across multiple servers/locations and allows programs to interact with files like they would on a
+    local system. [Source](https://www.geeksforgeeks.org/what-is-dfsdistributed-file-system/)
 - Remote Procedure Call (RPC)
+  - Technique for client-server based applications, allowing for processes to be carried out on either same system or across others
+    with a connected network.
+    [Source](https://www.geeksforgeeks.org/remote-procedure-call-rpc-in-operating-system/)
+    ![RPC](https://media.geeksforgeeks.org/wp-content/uploads/operating-system-remote-procedure-call-1.png)
 - Distributed Synchronization
+  - Focus on the challenges with keeping data consistent, managing simultaneous processes, and maintaining coherent behavior across
+    network nodes. [Source](https://www.geeksforgeeks.org/synchronization-in-distributed-systems/)
 - Cloud Computing
+  - On-demand availability of computing resources to provide services over the internet.
+    [Source](https://cloud.google.com/learn/what-is-cloud-computing)
 - Real-Time Systems
+  - These systems are meant to serve real-time systems with minimal response times and are utilized for extremely time-sensitive
+    systems requiring almost immediate deployment (e.g. missile systems, air traffic control, airbags, etc.)
+    [Source](https://www.geeksforgeeks.org/types-of-operating-systems/)
+    ![RTOS](https://media.geeksforgeeks.org/wp-content/uploads/20230511145635/Types8.webp)
 - Hard vs. Soft Real-Time Systems
+  - Hard RTOS are meant for applications where time-delay is not tolerated and time constraints are strict. Soft RTOS are meant for
+    applications where the time-constraints are loosened up and not as strict.
 - Algorithms:
   - Peterson’s Algorithm
+    - Related solution algorithm to the Producers-consumers problem meant to implement mutual exclusion in shared memory.
+      [Source](https://www.geeksforgeeks.org/petersons-algorithm-in-process-synchronization/)
   - Lamport’s Bakery Algorithm
+    - Related to first come first serve property, where each process receives a "ticket", with the smallest number ticket being
+      allowed into the critical section and any duplicates have the lower process ID as the priority.
+      [Source](https://www.geeksforgeeks.org/bakery-algorithm-in-process-synchronization/)
   - Readers-Writers Variations
+    - The three variations to the Readers-Writers Problem.
+      - First is "no reader shall be kept waiting if the share is currently opened for reading"
+      - Second is "no writer, once added to the queue, shall be kept waiting longer than absolutely necessary"
+      - Third is "no thread shall be allowed to starve"
+      [Source](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem)
   - Ricart–Agrawala Algorithm (Distributed Mutual Exclusion)
+    - Algorithm for permission-based approach to mutual exclusion in a distributed system
+      [Source](https://www.geeksforgeeks.org/ricart-agrawala-algorithm-in-mutual-exclusion-in-distributed-system/)
   - Bully Election Algorithm
+    - Method for electing a coordinator in a distributed system by having the nodes "bully" each other to check ID, and the one with
+      the highest becomes the leader. [Source](https://www.geeksforgeeks.org/bully-algorithm-in-distributed-system/)
+      ![Bully](https://media.geeksforgeeks.org/wp-content/uploads/20240724105438/Bully-Algorithm-in-Distributed-System.webp)
   - Ring Election Algorithm
+    - Different method for electing a coordinator in a distributed system. Focuses on messages being passed between each node, and
+      discarding any messages smaller than the one they received. The highest becomes coordinator.
+      [Source](https://www.geeksforgeeks.org/what-is-ring-election-algorithm/)
+      ![Ring](https://media.geeksforgeeks.org/wp-content/uploads/20240514212430/Ring-Election-Algorithm.webp)
 
 ### 11. Networking Concepts (optional)
 
@@ -294,15 +337,32 @@
 
 - System Performance
   - Benchmarking
+    - Utilizing operations to assess the relative performance of an object by running a number of standard tests and trials against
+      it. [Source](https://en.wikipedia.org/wiki/Benchmark_(computing))
   - Throughput
+    - Rate at which data is successfully transmitted over a network or channel within a period of time.
+      [Source](https://www.geeksforgeeks.org/difference-between-bandwidth-and-throughput/)
   - Latency
+    - Total time it takes to give output after being given input. [Source](https://www.geeksforgeeks.org/what-is-latency/)
 - System Calls (e.g., fork, exec, wait, read, write)
-- Kernel Types:
+  - A system call is the mechanism by which a program interacts with the underlying system to request services using the kernel.
+    [Source](https://www.geeksforgeeks.org/introduction-of-system-call/)
+- Kernel Types: [Source](https://www.geeksforgeeks.org/kernel-in-operating-system/)
   - Monolithic Kernel
+    - All operating system services operate in the kernel space.
   - Microkernel
+    - Minimalist approach with virtual memory and thread scheduling, and higher stability and less services in the kernel space.
   - Hybrid Kernel
+    - Combination of the speed and design from Monolithic style, and modularity and stability of Microkernel.
   - Exokernel
+    - Follows end-to-end principle with fewest hardware abstractions as possible, and allocates physical resources to applications.
 - Virtual Machines (VMs)
+  - Operating system or application environment that runs on software mimicking physical hardware.
+    [Source](https://www.geeksforgeeks.org/virtual-machines-in-operating-system/)
 - Resource Allocation
+  - Distributing available computer resources to running processes.
 - Debugging Tools (strace, gdb)
+  - Programs allowing for the monitoring and control of errors arising from other programs' execution.
+    [Source](https://www.geeksforgeeks.org/user-space-debugging-tools-in-linux/)
 - Synchronization Hardware (Test-and-Set, Compare-and-Swap)
+  - Algorithms meant to assist with the resolution of critical section problems. [Source](https://www.geeksforgeeks.org/hardware-synchronization-algorithms-unlock-and-lock-test-and-set-swap/)
