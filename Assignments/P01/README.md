@@ -7,10 +7,14 @@ Group Members:
 
 ## Overview:
 - The goal of the project is to create a Unix/Linux style file system managed through an SQLite database, allowing users to execute typical shell commands like ls, cp, mv, and grep. The shell leverages a FastAPI-based API to process user inputs, perform database operations, and handle file management tasks.
-- 'create_and_load_db.py' creates and loads initial information into the database. It includes both string and BLOB values in the contents field.
-- 'filesystem.db' stores the information initialized in 'create_and_load_db.py'.
-- 'sqliteCRUD.py' interacts with the database through SQL statements to create, read, update, or delete information.
-- 'api.py' receives requests from 'shell.py', handling a variety of Linux commands. After receiving a request, it interacts with 'sqliteCRUD.py' to continue carrying out execution of the command.
+
+## Files:
+| File  | Description                  |
+|----------|------------------------------|
+- create_and_load_db.py | Creates and loads initial information into the database. It includes both string and BLOB values in the contents field.
+- filesystem.db | Stores the information initialized in 'create_and_load_db.py'.
+- sqliteCRUD.py | Interacts with the database through SQL statements to create, read, update, or delete information.
+- api.py | Receives requests from 'shell.py', handling a variety of Linux commands. After receiving a request, it interacts with 'sqliteCRUD.py' to continue carrying out execution of the command.
 
 ## Instructions:
 Download all of the files in P01 and P02 and run any of the following commands after populating the database with 'create_and_load_db.py':
