@@ -6,14 +6,14 @@ Group Members:
 - Note: P01 and P02 work together (shell interacts with the file system).
 
 ## Overview:
-The goal of the project is to create a Unix/Linux style file system managed through an SQLite database, allowing users to execute typical shell commands like ls, cp, mv, and grep. The shell leverages a FastAPI-based API to process user inputs, perform database operations, and handle file management tasks.
-'create_and_load_db.py' creates and loads initial information into the database. It includes both string and BLOB values in the contents field.
-'filesystem.db' stores the information initialized in 'create_and_load_db.py'.
-'sqliteCRUD.py' interacts with the database through SQL statements to create, read, update, or delete information.
-'api.py' receives requests from 'shell.py', handling a variety of Linux commands. After receiving a request, it interacts with 'sqliteCRUD.py' to continue carrying out execution of the command.
+- The goal of the project is to create a Unix/Linux style file system managed through an SQLite database, allowing users to execute typical shell commands like ls, cp, mv, and grep. The shell leverages a FastAPI-based API to process user inputs, perform database operations, and handle file management tasks.
+- 'create_and_load_db.py' creates and loads initial information into the database. It includes both string and BLOB values in the contents field.
+- 'filesystem.db' stores the information initialized in 'create_and_load_db.py'.
+- 'sqliteCRUD.py' interacts with the database through SQL statements to create, read, update, or delete information.
+- 'api.py' receives requests from 'shell.py', handling a variety of Linux commands. After receiving a request, it interacts with 'sqliteCRUD.py' to continue carrying out execution of the command.
 
 ## Instructions:
-Run the `shell.py` file and use the following commands.
+Download all of the files in P01 and P02 and run any of the following commands after populating the database with 'create_and_load_db.py':
 
 ## Commands:
 | Command  | Description                  | Author   |
