@@ -4,7 +4,7 @@
 | :-: | ----------- | ---------------------- |
 | P01 | File System | File System Implementation. Contains the files for priming the database, the database itself, sqliteCRUD (for interaction with database), and the API. |
 | P02 | Shell | Unix/Linux Shell Implementation. |
-| P03 | CPU Scheduler | CPU Scheduler Implementation. |
+| P03 | CPU Scheduler | CPU Scheduler Implementation. Contains the following algorithms: FCFS, RR, PB, and MLFQ. |
 
 
 Directory Structure
