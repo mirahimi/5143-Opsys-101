@@ -2,7 +2,9 @@
 
 |  #  | Folder Link | Assignment Description |
 | :-: | ----------- | ---------------------- |
-|  0  | link 0      | description 0          |
+| P01 | File System | File System Implementation. Contains the files for priming the database, the database itself, sqliteCRUD (for interaction with database), and the API. |
+| P02 | Shell | Unix/Linux Shell Implementation. |
+| P03 | CPU Scheduler | CPU Scheduler Implementation. |
 
 
 Directory Structure
