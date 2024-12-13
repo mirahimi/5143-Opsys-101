@@ -1,4 +1,4 @@
-# Shell and File System Project - Implementation of a basic shell and file system
+# Shell and File System Project - Implementation of a basic shell
 22 Oct 2024
 5143 Shell Project
 Group Members:
