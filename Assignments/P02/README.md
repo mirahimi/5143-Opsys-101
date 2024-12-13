@@ -3,13 +3,13 @@
 5143 Shell Project
 Group Members:
 - Brett Mitchell, Sly Rahimi
-- This includes BOTH project 1 and 2, as they work together (shell interacts with the file system).
+- Note: P01 and P02 work together (shell interacts with the file system).
 
 ## Overview:
 The goal of the project is to create a custom shell that interacts with a simulated filesystem managed through an SQLite database, allowing users to execute typical shell commands like ls, cp, mv, and grep. The shell leverages a FastAPI-based API to process user inputs, perform database operations, and handle file management tasks in a Linux-like environment.
 
 ## Instructions:
-Run the `shell.py` file and use the following commands.
+Download the files in P01 and P02, then run the `shell.py` file and use the following commands.
 
 ## Commands:
 | Command  | Description                  | Author   |
