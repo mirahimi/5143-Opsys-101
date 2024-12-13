@@ -7,7 +7,7 @@
 | P03 | CPU Scheduler | CPU Scheduler Implementation. Contains the following algorithms: FCFS, RR, PB, and MLFQ. |
 
 +--------------------------------------------------------------+
-| Directory Structure  |
+| Directory Structure                                          |
 | Assignments/  |
 | ├── Shell_Project/  |
 | │   ├── Shell/  |
@@ -66,5 +66,5 @@
 | │   │   |   ├── walkthrough.py  |
 | │   │   ├── db_primer.py  |
 | │   │   ├── sqliteCRUD.py  |
-+-------------------------------------------------------------
++-------------------------------------------------------------+
 # LOOK INTO TREE PACKAGE TO MAKE THIS EASIER #
