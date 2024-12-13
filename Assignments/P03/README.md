@@ -1,4 +1,4 @@
-### CPU Scheduler Simulation
+# CPU Scheduler Simulation
 ## Overview
 The purpose of this project is to simulate the way a CPU processes jobs under a variety of test conditions and algorithms. By varying the algorithms and test conditions, we can see how it effects the simulation metrics and make observations about the algorithms.
 
