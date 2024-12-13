@@ -42,3 +42,7 @@ Download all of the files in P01 and P02 and run any of the following commands a
 | `fortune` | Receive a fortune               | Sly |
 | `cowspeak` | Display depiction of a coo    | Sly |
 | `man` | Display additional command information | Sly |
+
+## Non-Working Components
+- 'pwd' is partially functional, returning the parent ID, but does not provide the name of the parent ID.
+- 'mv' worked in all iterations of testing, but gave issues in the live demo/presentation.
